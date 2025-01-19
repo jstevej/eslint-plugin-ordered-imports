@@ -7,7 +7,7 @@ import { ImportGroupDefinition, Options } from "./options";
 import { getNameKey, getSourceKey, getType, getTypeKey } from "./ordering";
 
 function getSchema(): object {
-  const schema = require("../input.json");
+  const schema = require("./input.json");
   delete schema["$schema"];
   return schema;
 }

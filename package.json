@@ -13,7 +13,7 @@
   "scripts": {
     "format": "prettier --write src/*.ts",
     "clean": "rimraf dist",
-    "generate": "ts-json-schema-generator --no-top-ref -f tsconfig.json -t InputOptionsArray -o input.json",
+    "generate": "mkdir -p dist && ts-json-schema-generator --no-top-ref -f tsconfig.json -t InputOptionsArray -o dist/input.json",
     "build": "npm run generate && tsc",
     "test": "mocha --require ts-node/register src/rule.spec.ts",
     "lint": "prettier --check src/*.ts",
