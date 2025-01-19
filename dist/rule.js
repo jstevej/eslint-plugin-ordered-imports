@@ -6,7 +6,7 @@ exports.sort = sort;
 var options_1 = require("./options");
 var ordering_1 = require("./ordering");
 function getSchema() {
-    var schema = require("../input.json");
+    var schema = require("./input.json");
     delete schema["$schema"];
     return schema;
 }
